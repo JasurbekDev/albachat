@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainChatActivity">
+
+    <include layout="@layout/custom_toolbar" />
+
+    <ListView
+        android:id="@+id/mainChatListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#fff"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_above="@id/mainChatLayout"
+        android:transcriptMode="alwaysScroll"
+        tools:listitem="@layout/message_item" />
+
+    <LinearLayout
+        android:id="@+id/mainChatLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/mainChatEditText"
+            android:layout_width="0dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
+            android:hint="Write a message..."
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/mainChatButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:enabled="false"
+            android:text="Send" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/mainChatProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+</RelativeLayout>

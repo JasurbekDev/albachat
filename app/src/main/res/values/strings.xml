@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">AlbaChat</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_in_underlined"><u>Sign In</u></string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_up_underlined"><u>Sign Up</u></string>
+    <string name="albachat">AlbaChat</string>
+    <string name="password_placeholder">Password</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="age_placeholder">Age</string>
+    <string name="gender_placeholder">Gender</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="username_placeholder">User Name</string>
+    <string name="repeat_password_placeholder">Repeat Password</string>
+</resources>
